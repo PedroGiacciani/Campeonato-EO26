@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --fundoPrincipal: #08131F;
+    --fundoSecundario: #122231;
+    --cards: #1C2D3D;
+    --corPrincipal: #D4AF37;
+    --destaque: #00A86B;
+    --textoPrimario: #F5F7FA;
+    --textoSecundario: #B8C2CC;
+
+    --titulos: "Bebas Neue", Arial, sans-serif;
+    --subTitulos: "Montserrat", sans-serif;
+    --texto: "Inter", sans-serif;
+}
