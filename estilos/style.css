@@ -28,7 +28,7 @@ body{
 
 header{
     margin: 10px;
-    height: 150px;
+    height: 175px;
 }
 
 header > div#header-inferior{
@@ -67,6 +67,7 @@ h2{
 }
 
 p{
+    font-family: var(--texto);
     color: var(--textoSecundario);
     line-height: 1.5em;
     margin-top: 10px;
@@ -153,6 +154,7 @@ main div.chaveamento, main div.chaveamento-final1, main div.chaveamento-final2{
 
 footer{
    background-color: var(--fundoSecundario); 
+   padding: 2px 0px;
 }
 
 footer > p, footer > p > a{
