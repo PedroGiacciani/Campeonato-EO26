@@ -97,6 +97,10 @@ main > section#fase-grupos > div#jogos-fase-grupos{
     margin: 0px 0px;
 }
 
+main > section#fase-grupos > div#jogos-fase-grupos > h4{
+    margin: 10px 0px;
+}
+
 main ul{
     color: var(--textoSecundario);
     margin-left: 40px;
