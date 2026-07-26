@@ -15,6 +15,103 @@
     --texto: "Inter", sans-serif;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: "Inter", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: var(--fundoPrincipal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    margin: 10px;
+    height: 150px;
+}
+
+header > div#header-inferior{
+    background-color: var(--cards);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header > div#header-inferior > h1{
+    font-family: var(--titulos);
+    font-size: 5em;
+    text-align: center;
+    color: var(--corPrincipal);
+}
+
+header > div#header-inferior > p{
+    font-family: var(--textoSecundario);
+    color: var(--textoPrimario);
+    text-align: center;
+}
+
+main{
+    margin: 10px;
+}
+
+section{
+    background-color: var(--cards);
+    padding: 20px;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
+h2{
+    font-family: var(--subTitulos);
+    color: var(--destaque);
+}
+
+p{
+    color: var(--textoSecundario);
+    line-height: 1.5em;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+h3{
+    font-family: var(--subTitulos);
+    color: var(--corPrincipal);
+}
+
+h4{
+    color: var(--textoPrimario);
+    margin-bottom: 10px;
+}
+
+main > section#fase-grupos > h3{
+    margin: 10px 0px;
+}
+
+main > section#fase-grupos > div#tabela-grupo{
+    margin: 30px 0px;
+}
+
+main > section#fase-grupos ul{
+    color: var(--textoSecundario);
+    margin-left: 40px;
+    line-height: 2em;
+    list-style: inside;
+}
+
+main > section#fase-grupos > table{
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px 0px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+main > section#fase-grupos > table > thead > tr > th, main > section#fase-grupos > table > tbody > tr > td{
+    border: 1px solid black;
+    padding: 5px;    
+}
+
+main > section#fase-grupos > table > tbody > tr > td.gamb-tabela{
+    padding: 0;
 }
