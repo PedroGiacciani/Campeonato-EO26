@@ -76,6 +76,7 @@ p{
 h3{
     font-family: var(--subTitulos);
     color: var(--corPrincipal);
+    margin: 20px 0px;
 }
 
 h4{
@@ -91,14 +92,18 @@ main > section#fase-grupos > div#tabela-grupo{
     margin: 30px 0px;
 }
 
-main > section#fase-grupos ul{
+main > section#fase-grupos > div#jogos-fase-grupos{
+    margin: 0px 0px;
+}
+
+main ul{
     color: var(--textoSecundario);
     margin-left: 40px;
     line-height: 2em;
     list-style: inside;
 }
 
-main > section#fase-grupos > table{
+main table{
     width: 100%;
     background-color: white;
     border-radius: 8px;
@@ -107,11 +112,55 @@ main > section#fase-grupos > table{
     border-collapse: collapse;
 }
 
-main > section#fase-grupos > table > thead > tr > th, main > section#fase-grupos > table > tbody > tr > td{
+main thead > tr > th, main tbody > tr > td{
     border: 1px solid black;
     padding: 5px;    
 }
 
 main > section#fase-grupos > table > tbody > tr > td.gamb-tabela{
     padding: 0;
+}
+
+main div.tabela-chaveamento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    font-size: .8em;
+    align-items: center;
+}
+
+main div.tabela-chaveamento > p{
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+main div.tabela-chaveamento > div.sep1{
+    grid-row-start: 2;
+}
+
+main div.tabela-chaveamento > div.sep2{
+    grid-row-start: 3;
+}
+
+main div.chaveamento, main div.chaveamento-final1, main div.chaveamento-final2{
+    padding: 5px;
+    background-color: var(--fundoSecundario);
+    border-radius: 5px;
+    margin: 5px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+footer{
+   background-color: var(--fundoSecundario); 
+}
+
+footer > p, footer > p > a{
+    text-align: center;
+    color: var(--textoPrimario);
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
