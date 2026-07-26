@@ -108,6 +108,13 @@ main ul{
     list-style: inside;
 }
 
+main div.card-jogo{
+    background-color: var(--fundoSecundario);
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
 main table{
     width: 100%;
     background-color: white;
@@ -154,6 +161,10 @@ main div.chaveamento, main div.chaveamento-final1, main div.chaveamento-final2{
     margin: 5px;
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+main > section#estatisticas > div#vencedor{
+    margin: 20px 0px;
 }
 
 footer{
