@@ -181,3 +181,71 @@ footer > p, footer > p > a{
 footer > p > a:hover{
     text-decoration: underline;
 }
+
+@media screen and (min-width: 700px) and (max-width: 1200px){
+    main > section#competidores > div, main > section#fase-grupos > div#tabela-grupo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1470px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 700px 1800px 1330px 450px 670px 450px;
+        gap: 15px;
+        font-size: 1.3em;
+    }
+
+    main > section#fase-grupos > div#tabela-grupo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    section#fase-grupos{
+        grid-row: span 4;
+    }
+
+    section#final{
+        grid-row: span 2;
+    }
+
+    section#estatisticas{
+        grid-column: span 2;
+    }
+    
+    section#frase-final{
+        grid-row: 6;
+    }
+}
+
+@media screen and (min-width: 1471px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 700px 1800px 1330px 500px 1200px 1300px;
+        gap: 15px;
+        font-size: 1.3em;
+    }
+
+    main > section#fase-grupos > div#tabela-grupo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    section#fase-grupos{
+        grid-row: span 3;
+    }
+
+    section#estatisticas{
+        grid-row: 5 / span 2;
+    }
+
+    section#frase-final{
+        grid-column: 2;
+    }
+}
